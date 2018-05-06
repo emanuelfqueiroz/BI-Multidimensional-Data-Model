@@ -1,6 +1,6 @@
 ﻿<Database xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="1bff7b17-e804-4add-a743-6d61b3e0a359" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>Dimensions</ID>
-  <Name>Project01</Name>
+  <Name>Dimensions</Name>
   <CreatedTimestamp>0001-01-01T03:00:00Z</CreatedTimestamp>
   <LastSchemaUpdate>0001-01-01T03:00:00Z</LastSchemaUpdate>
   <Annotations>
@@ -84,6 +84,14 @@
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DimAttrValueColumnSuffix</Name>
       <Value>Value</Value>
     </Annotation>
+    <Annotation>
+      <Name>B77886FF900E4C18A95F79A6BFA488A9</Name>
+      <Value>
+        <Results xmlns="B77886FF900E4C18A95F79A6BFA488A9">
+          <Result sourcePath="[Date]" sourceType="Dimension" rule="14">Sample of course</Result>
+        </Results>
+      </Value>
+    </Annotation>
   </Annotations>
   <LastProcessed>0001-01-01T03:00:00Z</LastProcessed>
   <State>Unprocessed</State>
@@ -95,4 +103,48 @@
   <Dimensions />
   <DataSources />
   <DataSourceViews />
+  <Accounts>
+    <Account dwd:design-time-name="4bb40196-ba4b-4007-8ae5-d5d2be800626">
+      <AccountType>Flow</AccountType>
+      <Aliases>
+        <Alias>Flow</Alias>
+      </Aliases>
+    </Account>
+    <Account dwd:design-time-name="0ff0076e-0f65-42d1-be99-7a571be63ef2">
+      <AccountType>Liability</AccountType>
+      <Aliases>
+        <Alias>Liabilities</Alias>
+      </Aliases>
+    </Account>
+    <Account dwd:design-time-name="b8d0d2b0-b4a3-4c2a-ae70-c85af2e8a039">
+      <AccountType>Expense</AccountType>
+      <Aliases>
+        <Alias>Expenditures</Alias>
+      </Aliases>
+    </Account>
+    <Account dwd:design-time-name="fa2f4b88-3e26-41ac-9660-b1d0be4e9511">
+      <AccountType>Balance</AccountType>
+      <Aliases>
+        <Alias>Balances</Alias>
+      </Aliases>
+    </Account>
+    <Account dwd:design-time-name="eab5d93f-1c1c-49d1-9a42-35d56e6206b8">
+      <AccountType>Asset</AccountType>
+      <Aliases>
+        <Alias>Assets</Alias>
+      </Aliases>
+    </Account>
+    <Account dwd:design-time-name="8a96539e-e9a8-4e3b-810a-cda04a79f148">
+      <AccountType>Income</AccountType>
+      <Aliases>
+        <Alias>Revenue</Alias>
+      </Aliases>
+    </Account>
+    <Account dwd:design-time-name="f57b4e22-6691-4b93-bbbd-2cc4696a2ef0">
+      <AccountType>Statistical</AccountType>
+      <Aliases>
+        <Alias>Statistical</Alias>
+      </Aliases>
+    </Account>
+  </Accounts>
 </Database>

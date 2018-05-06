@@ -1,14 +1,14 @@
 ﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="b51cd432-6fee-422c-9398-77cc0a2e1b87" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>Date</ID>
   <Name>Date</Name>
-  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
-  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <CreatedTimestamp>0001-01-01T03:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T03:00:00Z</LastSchemaUpdate>
   <Annotations>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
       <Value>
         <dds xmlns="">
-          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-166" scrolltop="-3889" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="5186" y="12779" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-166" scrolltop="-3889" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="5874" y="12779" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
             <font>
               <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
             </font>
@@ -99,11 +99,12 @@
       </Value>
     </Annotation>
   </Annotations>
-  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <LastProcessed>0001-01-01T03:00:00Z</LastProcessed>
   <State>Unprocessed</State>
   <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="57ecea32-7eaa-413f-8928-08a31f323eb1">
     <DataSourceViewID>Finance</DataSourceViewID>
   </Source>
+  <Type>Time</Type>
   <ErrorConfiguration dwd:design-time-name="89c38bf2-150b-4197-a3f2-4bbccabcef26">
     <KeyNotFound>ReportAndStop</KeyNotFound>
     <KeyDuplicate>ReportAndStop</KeyDuplicate>
@@ -114,6 +115,7 @@
     <Attribute dwd:design-time-name="3a173808-c688-4993-9a8a-4bc33d44c4aa">
       <ID>Date</ID>
       <Name>Date</Name>
+      <Type>Days</Type>
       <Usage>Key</Usage>
       <KeyColumns>
         <KeyColumn dwd:design-time-name="38f085f1-f82a-47a1-b392-6cf5e6601f95">
@@ -146,6 +148,7 @@
     <Attribute dwd:design-time-name="4f5af887-e969-4792-ba63-ef7d3fda7c4f">
       <ID>Month</ID>
       <Name>Month</Name>
+      <Type>Months</Type>
       <KeyColumns>
         <KeyColumn dwd:design-time-name="c303e0bc-3010-4e23-85aa-92246a49e32f">
           <DataType>Integer</DataType>
@@ -178,6 +181,7 @@
     <Attribute dwd:design-time-name="b2f4ca31-6ca7-4496-9db2-6985434b7b18">
       <ID>Fiscal Quarter</ID>
       <Name>Fiscal Quarter</Name>
+      <Type>Quarters</Type>
       <KeyColumns>
         <KeyColumn dwd:design-time-name="6fdd66c2-63cd-4852-9ae1-ad8b97e7261a">
           <DataType>Integer</DataType>
@@ -209,6 +213,7 @@
     <Attribute dwd:design-time-name="faaceff5-215e-4734-9ccc-be684443c91d">
       <ID>Fiscal Year</ID>
       <Name>Fiscal Year</Name>
+      <Type>Years</Type>
       <KeyColumns>
         <KeyColumn dwd:design-time-name="af75b066-8c90-4859-a64f-72ef2ebd43fb">
           <DataType>SmallInt</DataType>
